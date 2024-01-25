@@ -496,5 +496,11 @@ letter-spacing: 1px;
   .gallery-banner{
     width: 100%;
   }
+  .image-list-container{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+  }
 }
+
 /* End responsiveness */
