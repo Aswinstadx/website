@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   ABOUT_PAGE_IMAGE,
   BANNER_IMAGE,
@@ -9,10 +9,25 @@ import GalleryScreen from "./GalleryScreen";
 
 function HomeScreen() {
   const [openGalery, setOpenGalery] = useState(false);
+  const [imageWidth, setImageWidth] = useState(window.innerWidth / 3);
 
   const clickGalery = () => {
     setOpenGalery(true);
   };
+
+  useEffect(() => {
+    const handleResize = () => {
+      setImageWidth(window.innerWidth / 3);
+    };
+
+    // Attach the event listener for resizing
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <div>
@@ -203,6 +218,144 @@ function HomeScreen() {
                       performances are imbued with a realism that transcends the
                       screen and stage, captivating audiences across the globe.
                     </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="mt-5"
+              style={{ top: "180px", position: "relative" }}
+            >
+              <div className="same-row-cards">
+                <div className="same-row-card">
+                  <img
+                    style={{
+                      width: `${imageWidth}px`,
+                      minHeight: "370px",
+                      maxHeight: "370px",
+                    }}
+                    src="https://s3-alpha-sig.figma.com/img/e6b9/eded/e322ab0f64d491a207ce4f6e1e37d503?Expires=1707091200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Ou4eAhzStNqVbjAG6xu3PqitPkrgbQlJaxSzfm3U0tVu1tIGTzYOv1URUH4k9-X25QKfXk4ys4iYxgZdj6PDiF0g8iX~n~Z6RLDW~LG4OtfnRMJR6EIkw37cY-xzX9rdIOef8et6mZ2nKsZE0WkAE4ITBHFAcrz1CRQJGvKIBmKms28YzaiYUzJGCBa5O~6heCfW4yCUZVzFkkgdt14UkS3FPt2llBgZOpvkkXCqt6ilxLydd1nSJAWOSSnEfN6P5TitP7caUR2Ltui6OEe7obll2NO2vLk5w68ljD1Fq6WFUVFS58P7izf9APK0B-mYq3its1js3KrqPCstJrSiCw__"
+                    className="image-fluid w-100"
+                  />
+                  <div className="card-text">
+                    <h4 className="text-center mt-3">Theatre</h4>
+                    <div
+                      className="text-center"
+                      style={{ display: "flex", justifyContent: "center" }}
+                    >
+                      <hr className="mt-3 text-center" />
+                    </div>
+                    <div className="mt-4">
+                      <div className="text-center text-content">
+                        <h4 style={{ fontWeight: "bold" }}>
+                          The Hardest Color Co-Star{" "}
+                        </h4>
+                        <h6>Dir. Beth Guinella / AMC Theatre</h6>
+                      </div>
+
+                      <div className="text-center text-content mt-4">
+                        <h4 style={{ fontWeight: "bold" }}>Somber Rhythms </h4>
+                        <h6>Co-Star / Dir. Gabrielle Hansen / Tribeca Stage</h6>
+                      </div>
+
+                      <div className="text-center text-content mt-4">
+                        <h4 style={{ fontWeight: "bold" }}>
+                          A Midsummer Night's Dream{" "}
+                        </h4>
+                        <h6>
+                          Lysander / Dir. Christopher James / Off-Broadway
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="same-row-card">
+                  <img
+                    style={{
+                      width: `${imageWidth}px`,
+                      minHeight: "370px",
+                      maxHeight: "370px",
+                    }}
+                    src="https://s3-alpha-sig.figma.com/img/077d/6e49/a7d76ca465bbc7892588ffbc3faf8ebd?Expires=1707091200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=A~Hfl3t0Qg~Hzld7QqiWdkOCaiU1C2FvdUsoOubT2pZVJci50BWIIyaqW2elrG9jRaIDErEDyY0E5JiEW~DdPPyQ6F-IdZcZOaKcidpu4VoSwqcykHYZvZxBjq6EzhnI408uxGL8HhcvF7FFcKAl~VltRd4mKIW44jelyQqQD4~HrQj-V3iQJmLD~3zsNC8QPxpX5q3DCwjRlBICpf909cmd0AQlnIEXQJw8~JYpzWuWgfzNJ2JDbpHgtddKQa6VIIVvI-f6HOT49XhfmsZvQpqRLUEl8SFh5N-~-JikcqTmc17~QBXSv4tWa-plhHyYeCFmIEcroq4-IulWCfv6Hw__"
+                    className="image-fluid w-100"
+                  />
+                  <div className="card-text">
+                    <h4 className="text-center mt-3">TV & Movies</h4>
+                    <div
+                      className="text-center"
+                      style={{ display: "flex", justifyContent: "center" }}
+                    >
+                      <hr className="mt-3 text-center" />
+                    </div>
+                    <div className="mt-4">
+                      <div className="text-center text-content">
+                        <h4 style={{ fontWeight: "bold" }}>
+                          Open Heart Co-Star{" "}
+                        </h4>
+                        <h6>Dir. Alex Choi / SYFY</h6>
+                      </div>
+
+                      <div className="text-center text-content mt-4">
+                        <h4 style={{ fontWeight: "bold" }}>
+                          Crown of Lies Co-Star{" "}
+                        </h4>
+                        <h6>
+                          Dir. Amanda Carlson The Unseen Co-Star Dir. Olivia
+                          Thorne / Netflix
+                        </h6>
+                      </div>
+
+                      <div className="text-center text-content mt-4">
+                        <h4 style={{ fontWeight: "bold" }}>
+                          Eternal Vigil Co-Star
+                        </h4>
+                        <h6>Dir. Michelle Taran / Sky Entertainment</h6>
+                      </div>
+
+                      <div className="text-center text-content mt-4">
+                        <h4 style={{ fontWeight: "bold" }}>Lost Call</h4>
+                        <h6>
+                          Co-Star / Dir. Jack Morse / Skyland Entertainment
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="same-row-card">
+                  <img
+                    style={{
+                      width: `${imageWidth}px`,
+                      minHeight: "370px",
+                      maxHeight: "370px",
+                    }}
+                    src="https://s3-alpha-sig.figma.com/img/e6b9/eded/e322ab0f64d491a207ce4f6e1e37d503?Expires=1707091200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Ou4eAhzStNqVbjAG6xu3PqitPkrgbQlJaxSzfm3U0tVu1tIGTzYOv1URUH4k9-X25QKfXk4ys4iYxgZdj6PDiF0g8iX~n~Z6RLDW~LG4OtfnRMJR6EIkw37cY-xzX9rdIOef8et6mZ2nKsZE0WkAE4ITBHFAcrz1CRQJGvKIBmKms28YzaiYUzJGCBa5O~6heCfW4yCUZVzFkkgdt14UkS3FPt2llBgZOpvkkXCqt6ilxLydd1nSJAWOSSnEfN6P5TitP7caUR2Ltui6OEe7obll2NO2vLk5w68ljD1Fq6WFUVFS58P7izf9APK0B-mYq3its1js3KrqPCstJrSiCw__"
+                    className="image-fluid w-100"
+                  />
+                  <div className="card-text">
+                    <h4 className="text-center mt-3">Commercial</h4>
+                    <div
+                      className="text-center"
+                      style={{ display: "flex", justifyContent: "center" }}
+                    >
+                      <hr className="mt-3 text-center" />
+                    </div>
+                    <div className="mt-4">
+                      <div className="text-center text-content">
+                        <h4 style={{ fontWeight: "bold" }}>The Rush Co-Star</h4>
+                        <h6>Dir. Kat Winter / LuxMedia ABC Global</h6>
+                      </div>
+
+                      <div className="text-center text-content mt-4">
+                        <h4 style={{ fontWeight: "bold" }}>Omnia Co-Star </h4>
+                        <h6>Dir. Carl MacKenzie / Lime Street B / NBC</h6>
+                      </div>
+
+                      <div className="text-center text-content mt-4">
+                        <h4 style={{ fontWeight: "bold" }}>Horizons Co-Star</h4>
+                        <h6>Dir. Brandon Dern / SRTB</h6>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

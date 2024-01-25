@@ -191,7 +191,7 @@ line-height: 50px; /* 416.667% */
   background: radial-gradient(50% 50% at 50% 50%, #1A1A18 75.5%, #191917 91%, #161614 100%);
   top: 110px;
   position: relative;
-  height: 200vh;
+  height: 250vh;
 }
 .portfolio h1{
   color: #BC9B5D;
@@ -302,6 +302,34 @@ height: 237px;
 flex-shrink: 0;
 margin: 8px;
 }
+.same-row-cards{
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-text h4{
+  color: #FFF;
+text-align: center;
+font-family: Inter;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 9px;
+}
+.card-text hr{
+  border: 4px solid white;
+  width: 379.047px;
+}
+.text-content h4,h6{
+  color: #FFF;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+letter-spacing: 1px;
+}
 /* End gallery page */
 
 /* Responsiveness */
@@ -411,10 +439,24 @@ margin: 8px;
     max-width: 100%; /* Allow the content to take up the full width on small screens */
     padding: 0 10px; /* Adjust padding for smaller screens */
   }
-
+  .portfolio{
+    height: 490vh;
+  }
   .portfolio-page-content h1 {
     font-size: 20px; /* Adjust the font size for smaller screens */
     margin-bottom: 10px; /* Add some margin to the bottom for spacing */
+  }
+  .same-row-cards{
+    display: flex;
+    flex-direction: column;
+  }
+  .same-row-card{
+    margin: 20px;
+  }
+  .same-row-card img{
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
 }
 /* End responsiveness */
