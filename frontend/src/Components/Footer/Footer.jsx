@@ -15,7 +15,12 @@ function Footer() {
                   <div className="mt-2">
                     <h6>MANAGEMENT</h6>
                     <h6>Maria Vascsak</h6>
-                    <h6>maria@imacontent.se</h6>
+                    <a
+                      style={{ textDecoration: "none", color: "white" }}
+                      href={`mailto:${"maria@imacontent.se"}`}
+                    >
+                      maria@imacontent.se
+                    </a>
                     <h6>Copywright 2023 all rights reserved.</h6>
                   </div>
                 </div>
