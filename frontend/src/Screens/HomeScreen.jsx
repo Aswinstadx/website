@@ -1,5 +1,9 @@
 import React from "react";
-import { BANNER_IMAGE } from "../Contants/Images/urls";
+import {
+  ABOUT_PAGE_IMAGE,
+  BANNER_IMAGE,
+  PORTFOLIO_IMAGE,
+} from "../Contants/Images/urls";
 
 function HomeScreen() {
   return (
@@ -79,6 +83,39 @@ function HomeScreen() {
           </div>
         </div>
       </section>
+      <section className="about">
+        <div className="about-page">
+          <div className=" p-3">
+            <div className="row">
+              <div className="col-md-4">
+                <h1>ABOUT</h1>
+              </div>
+              <div className="col-md-8">
+                <div className="m-5">
+                  <p className="m-5">
+                    Marten Eckerstrom, a distinguished actor trained at the
+                    prestigious Lee Strasberg Theatre & Film Institute and the
+                    American Academy of Dramatic Arts, stands out with his
+                    profound understanding of classical theater and the nuances
+                    of method acting. His educational journey in New York has
+                    laid a robust groundwork, allowing him to deliver
+                    performances that resonate with authenticity and emotional
+                    depth. Marten's versatility is evident across a spectrum of
+                    roles in acclaimed TV productions and films, as well as in
+                    his commanding stage appearances.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="about-page-image">
+              <img src={ABOUT_PAGE_IMAGE} className="mt-5" />
+            </div>
+          </div>
+        </div>
+      </section>
+     <section className="portfolio">
+        
+     </section>
     </div>
   );
 }
