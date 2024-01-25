@@ -1,0 +1,77 @@
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    top: 100px;
+    position: relative;
+    margin: 100px;
+  }
+  
+  .footer-content div {
+    margin-bottom: 10px;
+  }
+  
+  .instagram-icon {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+  }
+  
+  .footer-content h5 {
+    color: #FFF;
+    font-family: Oswald;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-content h6 {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 13.359px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25.5px;
+    letter-spacing: 0.75px;
+  }
+  .footer{
+    height: "324px";
+     width: "100%";
+    background-color: #BC9B5D;
+  }
+  /* Media Queries for Responsive Design */
+  .footer-link{
+    color: #FFF;
+text-align: center;
+font-family: Inter;
+font-size: 25px;
+font-style: normal;
+font-weight: 300;
+line-height: 30px; /* 120% */
+  }
+  @media (min-width: 768px) {
+    .footer-content {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      text-align: left;
+    }
+  
+    .footer-content div {
+      margin-bottom: 0;
+    }
+  
+    .footer-content h5,
+    .footer-content h6 {
+      text-align: left;
+    }
+    .footer{
+        height: 324px;
+    }
+  }
+  

@@ -4,10 +4,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500&family=Oswald:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Inter:wght@300;500&family=Oswald:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Inter:wght@300;400;500&family=Oswald:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Inter:wght@400;500&family=Oswald:wght@400;500&display=swap');
 
 *{
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 /*Header styles*/
@@ -17,6 +19,9 @@ flex-shrink: 0;
 background: #1B1B19;
 position: relative; /* Add position: relative to create stacking context */
   z-index: 1000; /* Set a higher z-index value */
+}
+.navbar-collapse{
+  background: #1B1B19;
 }
 a.nav-link{
   color: #A0A09F;
@@ -173,9 +178,68 @@ line-height: 50px; /* 416.667% */
 } */
 /* End about page style */
 
+/* Portfolio page */
+.portfolio{
+  background: radial-gradient(50% 50% at 50% 50%, #1A1A18 75.5%, #191917 91%, #161614 100%);
+  top: 110px;
+  position: relative;
+  height: 200vh;
+}
+.portfolio h1{
+  color: #BC9B5D;
+text-align: center;
+font-family: Oswald;
+font-size: 96px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 9px;
+}
+.port-image img{
+  width: 960px;
+height: 542px;
+flex-shrink: 0;
+left: -50px;
+position: relative;
+}
+.portfolio-page-content h1{
+  top: 80px;
+  position: relative;
+}
+.paragraph-text{
+  color: red;
+  font-size: 50px;
+}
+
+/* div.svg-icon{
+  position: absolute,
+  bott
+  bottom: 0,
+  left: "50%",
+  top:'150px',
+  transform: "translateX(-50%)",
+} */
+.svg-icon{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  top: 150px;
+  transform: translateX(-50%);
+}
+.text-contents{
+  top: 80px;
+  position: relative;
+}
+.portfolio-page-content {
+  max-width: 800px; /* Set a maximum width for the content */
+  margin: 0 auto; /* Center the content horizontally */
+  padding: 0 20px; /* Add some padding for better readability */
+}
+/* End portfolio page */
 
 /* Responsiveness */
 @media only screen and (max-width: 600px) {
+  
   .navbar-brand{
     left: -88px;
     position: relative;
@@ -250,7 +314,40 @@ line-height: 50px; /* 416.667% */
    position: relative;
    left: -50px;
   }
-  
-  
+  .text-contents{
+    top: -180px;
+    position: relative;
+  }
+  .text-contents h1{
+    top: 40px;
+    position: relative;
+  }
+  .svg-icon{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    top: -40px;
+    transform: translateX(-50%);
+  }
+  .port-image{
+    display: flex;
+    justify-content: center;
+  }
+  .port-image img{
+    left: 3px;
+    position: relative;
+    top: -120px;
+    width: 100%;
+    height: auto;
+  }
+  .portfolio-page-content {
+    max-width: 100%; /* Allow the content to take up the full width on small screens */
+    padding: 0 10px; /* Adjust padding for smaller screens */
+  }
+
+  .portfolio-page-content h1 {
+    font-size: 20px; /* Adjust the font size for smaller screens */
+    margin-bottom: 10px; /* Add some margin to the bottom for spacing */
+  }
 }
 /* End responsiveness */

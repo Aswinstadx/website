@@ -89,10 +89,11 @@ line-height: normal;
 letter-spacing: 9px;
 }
 .portfolio-page-content p{
-    color: #FFF;
+    color: #fff;
+    /* min-width: 1034px; */
 text-align: center;
 font-family: Inter;
-font-size: 24px;
+font-size: 20px;
 font-style: normal;
 font-weight: 300;
 line-height: normal;
@@ -126,3 +127,26 @@ span.bold{
     display: flex;
     justify-content: center;
 }
+.portfolio-page-content {
+    max-width: 800px; /* Set a maximum width for the content */
+    margin: 0 auto; /* Center the content horizontally */
+    padding: 0 20px; /* Add some padding for better readability */
+    top: -50px;
+    position: relative;
+    
+   
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 767px) {
+    .portfolio-page-content {
+      max-width: 100%; /* Allow the content to take up the full width on small screens */
+      padding: 0 10px; /* Adjust padding for smaller screens */
+    }
+  
+    .portfolio-page-content h1 {
+      font-size: 3.5em; /* Adjust the font size for smaller screens */
+      margin-bottom: 10px; /* Add some margin to the bottom for spacing */
+    }
+  }
+  
