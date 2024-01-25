@@ -63,7 +63,8 @@ function HomeScreen() {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon text-white"></span>
+            {/* <span class="navbar-toggler-icon text-white"></span> */}
+            <i className="fa fa-bars"></i>
           </button>
 
           <div

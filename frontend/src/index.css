@@ -446,6 +446,7 @@ letter-spacing: 1px;
   }
   .portfolio{
     height: 490vh;
+    height: 100%;
   }
   .portfolio-page-content h1 {
     font-size: 20px; /* Adjust the font size for smaller screens */
