@@ -1,4 +1,7 @@
 import React from "react";
+import Lightbox from 'react-image-lightbox';
+import 'react-image-lightbox/style.css';
+import SlideshowGallery from "../Components/SlideshowGallery";
 
 function GalleryScreen() {
   return (
@@ -31,6 +34,9 @@ function GalleryScreen() {
             </div>
             <div className="mt-5 ">
               <h4 className="text-center title">IMAGE GALLERY</h4>
+              <div>
+                <SlideshowGallery />
+              </div>
             </div>
           </div>
         </div>

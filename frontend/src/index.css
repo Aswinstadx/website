@@ -12,7 +12,14 @@
   scroll-behavior: smooth;
   cursor: pointer;
 }
+body::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar width */
+}
 
+/* For Firefox */
+body {
+  scrollbar-width: 0; /* Remove scrollbar width */
+}
 /*Header styles*/
 header{
   height: 110px;
@@ -273,6 +280,27 @@ img.gallery-image{
 height: 427.582px;
 flex-shrink: 0;
 
+}
+.center-image{
+  width: 333px;
+height: 491px;
+flex-shrink: 0;
+}
+.same-row{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  margin-top: 35px;
+  overflow-x: scroll;
+}
+.same-row::-webkit-scrollbar{
+  width: 0;
+}
+img.sm-image{
+  min-width: 158px;
+height: 237px;
+flex-shrink: 0;
+margin: 8px;
 }
 /* End gallery page */
 
