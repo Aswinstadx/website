@@ -9,6 +9,14 @@
   cursor: pointer;
   
 }
+.navarrow1{
+  left: -40px;
+  position: relative;
+}
+.navarrow2{
+  left: 40px;
+  position: relative;
+}
 .gallery-container {
   display: flex;
   flex-direction: column;
@@ -51,6 +59,7 @@ flex-shrink: 0;
 }
 @media (max-width: 768px) {
   .image-list-container {
+    width: 100%;
     overflow-x: auto; /* Add horizontal scroll for smaller screens */
   }
 
@@ -58,4 +67,26 @@ flex-shrink: 0;
     width: 80px;
     height: 80px;
   }
+  .nav-arrow-icons{
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+  }
+  .navarrow1{
+    left: -5px;
+    position: relative;
+  }
+  .navarrow2{
+    left: 5px;
+    position: relative;
+  }
+  .nav-arrow {
+    font-size: 24px; /* Adjust the font size as needed */
+    margin-top: 50%; /* Move the arrows down by 50% of the parent container's height */
+    cursor: pointer;
+    
+  }
+  /* .gallery-container{
+    margin: 10px;
+  } */
 }

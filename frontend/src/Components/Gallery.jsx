@@ -34,9 +34,9 @@ const Gallery = () => {
     <div className="gallery-container">
       <div className="image-gallery-box">
         <div
-          className="nav-arrow"
+          className="nav-arrow navarrow1"
           onClick={handlePrevClick}
-          style={{ left: "-40px", position: "relative" }}
+         
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -44,6 +44,7 @@ const Gallery = () => {
             height="96"
             viewBox="0 0 75 96"
             fill="none"
+            className="nav-arrow-icons"
           >
             <path
               d="M0 48L75 0.368607V95.6314L0 48Z"
@@ -68,9 +69,9 @@ const Gallery = () => {
           <img src={images[selectedImage]} alt={`Image ${selectedImage + 1}`} />
         </div>
         <div
-          className="nav-arrow"
+          className="nav-arrow navarrow2"
           onClick={handleNextClick}
-          style={{ left: "40px", position: "relative" }}
+          
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -78,6 +79,7 @@ const Gallery = () => {
             height="96"
             viewBox="0 0 75 96"
             fill="none"
+            className="nav-arrow-icons"
           >
             <path
               d="M75 48L0 95.6314V0.368603L75 48Z"
