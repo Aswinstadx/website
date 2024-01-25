@@ -1,22 +1,25 @@
 import React from "react";
-import Lightbox from 'react-image-lightbox';
-import 'react-image-lightbox/style.css';
+import Lightbox from "react-image-lightbox";
+import "react-image-lightbox/style.css";
 import SlideshowGallery from "../Components/SlideshowGallery";
 
 function GalleryScreen() {
   return (
     <div>
-      <div className="row gallery-banner">
-        <div className="col-md-6">
-          <h1>VIDEO</h1>
-        </div>
-        <div className="col-md-6">
-          <h1>IMAGES</h1>
+      <div className="main-box">
+        <div className="row gallery-banner w-100">
+          <div className="col-md-6">
+            <h1>VIDEO</h1>
+          </div>
+          <div className="col-md-6">
+            <h1>IMAGES</h1>
+          </div>
         </div>
       </div>
+
       <div>
-        <div className="about-page p-4">
-          <div className="container-fluid p-5">
+        <div className="about-page ">
+          <div className="container-fluid p-3">
             <h4 className="text-center title">VIDEO GALLERY</h4>
             <div className="row mt-4">
               <div className="col-md-6">
