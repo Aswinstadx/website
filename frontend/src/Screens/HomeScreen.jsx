@@ -119,13 +119,13 @@ function HomeScreen() {
               {/* <img src={BANNER_IMAGE} className="banner-image" alt="Banner" /> */}
               {/* <video src="https://drive.google.com/file/d/1t_HeH81vUWoeqWe92rMV5gkFvyYJxJGx/view" /> */}
               <ReactPlayer
-                url="https://drive.google.com/file/d/1t_HeH81vUWoeqWe92rMV5gkFvyYJxJGx/view" // Replace with your video URL
+                url={process.env.PUBLIC_URL + "/video.mp4"}
                 playing={true}
                 loop={true}
-                volume={0} // Set volume to 0 for no sound
-                controls={true} // Set to false if you don't want player controls
-                width="100%" // Set the width of the player
-                height="auto" // Set the height of the player
+                volume={0}
+                controls={false}
+                width="100%"
+                height="auto"
               />
               <div className="banner-text">
                 <h2>Marten</h2>
@@ -134,7 +134,7 @@ function HomeScreen() {
               </div>
             </div>
           </section>
-          <section className="about" id="about">
+          <section className="about" id="about" style={{top:'-10px',position:'relative'}}>
             <div className="about-page">
               <div className=" p-3">
                 <div className="row">
