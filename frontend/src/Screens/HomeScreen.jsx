@@ -6,6 +6,7 @@ import {
 } from "../Contants/Images/urls";
 import Footer from "../Components/Footer/Footer";
 import GalleryScreen from "./GalleryScreen";
+import ReactPlayer from "react-player";
 
 function HomeScreen() {
   const [openGalery, setOpenGalery] = useState(false);
@@ -115,7 +116,17 @@ function HomeScreen() {
         <>
           <section className="banner">
             <div className="banner-container">
-              <img src={BANNER_IMAGE} className="banner-image" alt="Banner" />
+              {/* <img src={BANNER_IMAGE} className="banner-image" alt="Banner" /> */}
+              {/* <video src="https://drive.google.com/file/d/1t_HeH81vUWoeqWe92rMV5gkFvyYJxJGx/view" /> */}
+              <ReactPlayer
+                url="https://drive.google.com/file/d/1t_HeH81vUWoeqWe92rMV5gkFvyYJxJGx/view" // Replace with your video URL
+                playing={true}
+                loop={true}
+                volume={0} // Set volume to 0 for no sound
+                controls={true} // Set to false if you don't want player controls
+                width="100%" // Set the width of the player
+                height="auto" // Set the height of the player
+              />
               <div className="banner-text">
                 <h2>Marten</h2>
                 <h4>Eckerstrom</h4>

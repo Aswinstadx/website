@@ -445,7 +445,7 @@ letter-spacing: 1px;
     padding: 0 10px; /* Adjust padding for smaller screens */
   }
   .portfolio{
-    height: 550vh;
+    height: 500vh;
     /* height: 100%; */
   }
   .portfolio-page-content h1 {
