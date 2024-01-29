@@ -66,8 +66,8 @@ line-height: 50px; /* 416.667% */
 
 .banner-text {
   position: absolute;
-  bottom: 80px;
-  right: 150px;
+  bottom: 280px;
+  right: 250px;
   padding: 100px;
 }
 
@@ -502,5 +502,6 @@ letter-spacing: 1px;
     overflow-x: scroll;
   }
 }
+
 
 /* End responsiveness */

@@ -1,0 +1,506 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Oswald:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Oswald:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500&family=Oswald:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Inter:wght@300;500&family=Oswald:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Inter:wght@300;400;500&family=Oswald:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Inter:wght@400;500&family=Oswald:wght@400;500&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  cursor: pointer;
+}
+body::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar width */
+}
+
+/* For Firefox */
+body {
+  scrollbar-width: 0; /* Remove scrollbar width */
+}
+/*Header styles*/
+header{
+  height: 110px;
+flex-shrink: 0;
+background: #1B1B19;
+position: relative; /* Add position: relative to create stacking context */
+  z-index: 1000; /* Set a higher z-index value */
+}
+.navbar-collapse{
+  background: #1B1B19;
+}
+a.nav-link{
+  color: #A0A09F;
+text-align: center;
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 50px; /* 416.667% */
+}
+.custom-toggler .navbar-toggler-icon {
+  color: white;
+}
+.navbar-toggler{
+  color: white;
+}
+#navbarSupportedContent{
+  color: red;
+}
+/*End header styles*/
+
+/* Banner styles */
+.banner-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.banner-image {
+  width: 100%;
+  /* height: 847px; */
+  height: 80vh;
+  object-fit: cover;
+}
+
+.banner-text {
+  position: absolute;
+  bottom: 80px;
+  right: 150px;
+  padding: 100px;
+}
+
+.banner-text h2 {
+  color: #FFF;
+  font-family: Inter;
+  font-size: 63px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 75.6px;
+  letter-spacing: 9.45px;
+}
+
+.banner-text h4 {
+  color: #FFF;
+  text-align: center;
+  font-family: Inter;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27.6px;
+  letter-spacing: 3.45px;
+  left: 100px;
+  position: relative;
+  top: -10px;
+}
+
+.banner-text h5 {
+  color: #BC9B5D;
+  font-family: Inter;
+  font-size: 25.262px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2.9px;
+  left: 55px;
+  position: relative;
+  top: -20px;
+}
+
+/* End banner styles */
+
+/* About page style */
+.about-page {
+  background: linear-gradient(180deg, #D9D9D9 0%, rgba(217, 217, 217, 0.00) 100%);
+  /* top: -50px;
+  position: relative; */
+}
+
+.about-page h1 {
+  color: #000;
+  text-align: center;
+  font-family: Oswald;
+  /* font-size: 130px; */
+  font-size: 90px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 9px;
+  top: 0px;
+  position: relative;
+}
+
+.about-page p {
+  color: #000;
+  text-align: center;
+  font-family: 'Dosis', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  /* font-weight: 200; */
+  line-height: normal;
+  top: 25px;
+  position: relative;
+}
+
+.about-page-image {
+  display: flex;
+  justify-content: center;
+}
+
+.about-page-image img {
+  width: 931px;
+  height: 493.699px;
+  flex-shrink: 0;
+  top: 60px;
+  position: relative;
+}
+.about-page-image {
+  display: flex;
+  justify-content: center;
+}
+
+.about-page-image img {
+  max-width: 100%;
+  height: 493.699px;
+  flex-shrink: 0;
+  top: 60px;
+  position: relative;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+  .about-page-image img {
+    width: 100%; /* Set the image width to 100% of the container on smaller screens */
+    top: 0; /* Reset the top position if needed */
+    height: auto;
+  }
+}
+
+
+/* .centered-svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+/* End about page style */
+
+/* Portfolio page */
+.portfolio{
+  background: radial-gradient(50% 50% at 50% 50%, #1A1A18 75.5%, #191917 91%, #161614 100%);
+  top: 110px;
+  position: relative;
+  height: 250vh;
+}
+.portfolio h1{
+  color: #BC9B5D;
+text-align: center;
+font-family: Oswald;
+font-size: 96px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 9px;
+}
+.port-image img{
+  width: 960px;
+height: 542px;
+flex-shrink: 0;
+left: -50px;
+position: relative;
+}
+.portfolio-page-content h1{
+  top: 80px;
+  position: relative;
+}
+.paragraph-text{
+  color: red;
+  font-size: 50px;
+}
+
+/* div.svg-icon{
+  position: absolute,
+  bott
+  bottom: 0,
+  left: "50%",
+  top:'150px',
+  transform: "translateX(-50%)",
+} */
+.svg-icon{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  top: 150px;
+  transform: translateX(-50%);
+}
+.text-contents{
+  top: 80px;
+  position: relative;
+}
+.portfolio-page-content {
+  max-width: 800px; /* Set a maximum width for the content */
+  margin: 0 auto; /* Center the content horizontally */
+  padding: 0 20px; /* Add some padding for better readability */
+}
+/* End portfolio page */
+
+
+/* Gallery page */
+.main-box{
+  background: radial-gradient(50% 50% at 50% 50%, #1A1A18 75.5%, #191917 91%, #161614 100%);
+}
+.gallery-banner{
+  background: radial-gradient(50% 50% at 50% 50%, #1A1A18 75.5%, #191917 91%, #161614 100%);
+  height: 852px;
+  width: 100%;
+  min-width: 100%;
+flex-shrink: 0;
+}
+.gallery-banner h1{
+  color: #FFF;
+text-align: center;
+font-family: Oswald;
+font-size: 130px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 9px;
+align-items: center;
+top: 25%;
+position: relative;
+}
+.title{
+  color: #FFF;
+text-align: center;
+font-family: Oswald;
+font-size: 96px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 9px;
+}
+img.gallery-image{
+  width: 806.319px;
+height: 427.582px;
+flex-shrink: 0;
+
+}
+.center-image{
+  width: 333px;
+height: 491px;
+flex-shrink: 0;
+}
+.same-row{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  margin-top: 35px;
+  overflow-x: scroll;
+}
+.same-row::-webkit-scrollbar{
+  width: 0;
+}
+img.sm-image{
+  min-width: 158px;
+height: 237px;
+flex-shrink: 0;
+margin: 8px;
+}
+.same-row-cards{
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-text h4{
+  color: #FFF;
+text-align: center;
+font-family: Inter;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 9px;
+}
+.card-text hr{
+  border: 4px solid white;
+  width: 379.047px;
+}
+.text-content h4,h6{
+  color: #FFF;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+letter-spacing: 1px;
+}
+/* End gallery page */
+
+/* Responsiveness */
+@media only screen and (max-width: 600px) {
+  
+  .navbar-brand{
+    left: -88px;
+    position: relative;
+  }
+  .banner-image {
+    width: 100%;
+    height: 90vh;
+  }
+  .banner-text {
+    position: relative;
+    bottom: 80px;
+    left: -80px;
+    padding: 100px;
+  }
+  
+  .banner-text h2 {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 63px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 75.6px;
+    letter-spacing: 9.45px;
+  }
+  
+  .banner-text h4 {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27.6px;
+    letter-spacing: 3.45px;
+    left: 100px;
+    position: relative;
+    top: -10px;
+  }
+  
+  .banner-text h5 {
+    color: #BC9B5D;
+    font-family: Inter;
+    font-size: 25.262px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.9px;
+    left: 55px;
+    position: relative;
+    top: -14px;
+  }
+  .about-page h1 {
+    color: #000;
+    text-align: center;
+    font-family: Oswald;
+    /* font-size: 130px; */
+    font-size: 90px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 9px;
+    top: 20px;
+    position: relative;
+  }
+  .about-page{
+    display: flex;
+   justify-content: center;
+  }
+  .about-page p {
+   width: 100%;
+   top: 20px;
+   position: relative;
+   left: -50px;
+  }
+  .text-contents{
+    top: -180px;
+    position: relative;
+  }
+  .text-contents h1{
+    top: 40px;
+    position: relative;
+  }
+  .svg-icon{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    top: -40px;
+    transform: translateX(-50%);
+  }
+  .port-image{
+    display: flex;
+    justify-content: center;
+  }
+  .port-image img{
+    left: 3px;
+    position: relative;
+    top: -120px;
+    width: 100%;
+    height: auto;
+  }
+  .portfolio-page-content {
+    max-width: 100%; /* Allow the content to take up the full width on small screens */
+    padding: 0 10px; /* Adjust padding for smaller screens */
+  }
+  .portfolio{
+    height: 500vh;
+    /* height: 100%; */
+  }
+  .portfolio-page-content h1 {
+    font-size: 20px; /* Adjust the font size for smaller screens */
+    margin-bottom: 10px; /* Add some margin to the bottom for spacing */
+  }
+  .same-row-cards{
+    display: flex;
+    flex-direction: column;
+  }
+  .same-row-card{
+    margin: 20px;
+  }
+  .same-row-card img{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .gallery-banner h1{
+    color: #FFF;
+  text-align: center;
+  font-family: Oswald;
+  font-size: 90px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 9px;
+  align-items: center;
+  top: 25%;
+  position: relative;
+  }
+  .title{
+    color: #FFF;
+  text-align: center;
+  font-family: Oswald;
+  font-size: 66px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 9px;
+  }
+  img.gallery-image{
+    width: '100%';
+  height: 427.582px;
+  flex-shrink: 0;
+  margin-top: 20px;
+  }
+  .gallery-banner{
+    width: 100%;
+  }
+  .image-list-container{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+  }
+}
+
+/* End responsiveness */
